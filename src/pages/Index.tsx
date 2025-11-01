@@ -16,33 +16,30 @@ export default function Index() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
       <nav className="fixed top-0 w-full z-50 glass-card border-b">
-        <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center">
-              <Icon name="Gift" className="text-white" size={20} />
+        <div className="max-w-[1400px] mx-auto px-12 py-5 flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center">
+              <Icon name="Gift" className="text-white" size={24} />
             </div>
-            <span className="text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            <span className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               DreamGift AI
             </span>
           </div>
-          <div className="hidden md:flex gap-8">
-            <a href="#quiz" className="text-sm font-medium hover:text-primary transition-colors">Анкета</a>
-            <a href="#gifts" className="text-sm font-medium hover:text-primary transition-colors">Топ подарков</a>
-            <a href="#partners" className="text-sm font-medium hover:text-primary transition-colors">Партнеры</a>
-            <a href="#reviews" className="text-sm font-medium hover:text-primary transition-colors">Отзывы</a>
-            <a href="#contact" className="text-sm font-medium hover:text-primary transition-colors">Контакты</a>
+          <div className="flex gap-12">
+            <a href="#quiz" className="text-base font-medium hover:text-primary transition-colors">Анкета</a>
+            <a href="#gifts" className="text-base font-medium hover:text-primary transition-colors">Топ подарков</a>
+            <a href="#partners" className="text-base font-medium hover:text-primary transition-colors">Партнеры</a>
+            <a href="#reviews" className="text-base font-medium hover:text-primary transition-colors">Отзывы</a>
+            <a href="#contact" className="text-base font-medium hover:text-primary transition-colors">Контакты</a>
           </div>
-          <Button variant="ghost" size="icon" className="md:hidden">
-            <Icon name="Menu" size={24} />
-          </Button>
         </div>
       </nav>
 
-      <section className="pt-32 pb-20 px-6">
-        <div className="container mx-auto max-w-6xl">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <section className="pt-32 pb-20 px-12">
+        <div className="max-w-[1400px] mx-auto">
+          <div className="grid grid-cols-2 gap-16 items-center">
             <div className="animate-fade-in-up">
-              <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+              <h1 className="text-6xl font-bold mb-8 leading-tight">
                 Идеальный подарок с помощью{' '}
                 <span className="bg-gradient-to-r from-primary via-purple-500 to-secondary bg-clip-text text-transparent">
                   искусственного интеллекта
@@ -77,8 +74,8 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="quiz" className="py-20 px-6 bg-white/40 backdrop-blur-sm">
-        <div className="container mx-auto max-w-4xl">
+      <section id="quiz" className="py-24 px-12 bg-white/40 backdrop-blur-sm">
+        <div className="max-w-[1000px] mx-auto">
           <div className="text-center mb-12 animate-fade-in">
             <h2 className="text-4xl font-bold mb-4">Расскажите о получателе</h2>
             <p className="text-lg text-muted-foreground">Заполните анкету, и наш AI подберет идеальный подарок</p>
@@ -141,14 +138,14 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="gifts" className="py-20 px-6">
-        <div className="container mx-auto max-w-6xl">
+      <section id="gifts" className="py-24 px-12">
+        <div className="max-w-[1400px] mx-auto">
           <div className="text-center mb-12 animate-fade-in">
             <h2 className="text-4xl font-bold mb-4">Топ подарков</h2>
             <p className="text-lg text-muted-foreground">Самые популярные идеи от нашего AI</p>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-3 gap-8">
             {[
               { icon: 'Camera', title: 'Фотокамера Fujifilm', category: 'Техника', price: '45 000 ₽', gradient: 'from-blue-400 to-purple-500' },
               { icon: 'Plane', title: 'Путешествие в Грузию', category: 'Впечатления', price: '85 000 ₽', gradient: 'from-purple-400 to-pink-500' },
@@ -181,14 +178,14 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="py-20 px-6 bg-gradient-to-r from-primary/10 via-purple-100/50 to-secondary/10">
-        <div className="container mx-auto max-w-6xl">
+      <section className="py-24 px-12 bg-gradient-to-r from-primary/10 via-purple-100/50 to-secondary/10">
+        <div className="max-w-[1400px] mx-auto">
           <div className="text-center mb-12 animate-fade-in">
             <h2 className="text-4xl font-bold mb-4">Преимущества</h2>
             <p className="text-lg text-muted-foreground">Почему выбирают DreamGift AI</p>
           </div>
           
-          <div className="grid md:grid-cols-5 gap-6">
+          <div className="grid grid-cols-5 gap-8">
             {[
               { icon: 'Brain', title: 'AI-анализ', desc: 'Глубокое изучение предпочтений' },
               { icon: 'Zap', title: 'Быстро', desc: 'Идеи за 30 секунд' },
@@ -214,14 +211,14 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="partners" className="py-20 px-6">
-        <div className="container mx-auto max-w-6xl">
+      <section id="partners" className="py-24 px-12">
+        <div className="max-w-[1400px] mx-auto">
           <div className="text-center mb-12 animate-fade-in">
             <h2 className="text-4xl font-bold mb-4">Наши партнёры</h2>
             <p className="text-lg text-muted-foreground">Работаем с лучшими магазинами России</p>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
+          <div className="grid grid-cols-5 gap-10">
             {['Wildberries', 'Ozon', 'Яндекс.Маркет', 'Lamoda', 'М.Видео'].map((partner, index) => (
               <div 
                 key={index}
@@ -235,14 +232,14 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="reviews" className="py-20 px-6 bg-white/40 backdrop-blur-sm">
-        <div className="container mx-auto max-w-6xl">
+      <section id="reviews" className="py-24 px-12 bg-white/40 backdrop-blur-sm">
+        <div className="max-w-[1400px] mx-auto">
           <div className="text-center mb-12 animate-fade-in">
             <h2 className="text-4xl font-bold mb-4">Отзывы клиентов</h2>
             <p className="text-lg text-muted-foreground">Что говорят о нас пользователи</p>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-3 gap-8">
             {[
               { 
                 name: 'Анна Соколова', 
@@ -286,8 +283,8 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="contact" className="py-20 px-6">
-        <div className="container mx-auto max-w-4xl">
+      <section id="contact" className="py-24 px-12">
+        <div className="max-w-[1000px] mx-auto">
           <div className="glass-card p-12 rounded-3xl shadow-2xl animate-scale-in">
             <div className="text-center mb-8">
               <h2 className="text-4xl font-bold mb-4">Свяжитесь с нами</h2>
@@ -331,8 +328,8 @@ export default function Index() {
         </div>
       </section>
 
-      <footer className="py-12 px-6 bg-gradient-to-br from-primary/5 to-secondary/5">
-        <div className="container mx-auto max-w-6xl">
+      <footer className="py-16 px-12 bg-gradient-to-br from-primary/5 to-secondary/5">
+        <div className="max-w-[1400px] mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div className="flex items-center gap-2">
               <div className="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center">
